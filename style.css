@@ -1,73 +1,76 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-body{
-    transform: scale(0.8);
-    margin-top: -70px;
-    background-image: url(assets/back.jpg);
-    color: #ffffff;
-    margin-left: -150px;
-}
-
-.conteudo__1{
-    width: 1000px;
-    margin: 5%;
-    backdrop-filter: blur(3px);
-    border-radius: 20px;
-    padding: 2%;
-    border: white solid;
-}
-.botao {
-    font-size: 2rem;
-    margin: 5% 0;
-    display: flex;
     text-decoration: none;
-    border-radius: 40px;
-    width: 165px;
-    justify-content: center;
-    background-color: #918c8c;
-    color: #ffffff;
-    padding: 1%;
 }
-
-h1{
-    font-size: 4rem;
-    margin: 8% 0px;
-}
-
-.conteudo__1__paragrafo{
+.navegacao{
+    margin: 4% 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 51px;
     font-size: 2rem;
 }
 
-.conteudo__2{
-    padding: 2%;
-    margin: 0 5%;
-    display: flex;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2%;
-    border: white solid;
+.navegacao__link{
+    color: #ffffff;
 }
 
-.conteudo__2__titulo{
-    font-size: 1.8rem;
-}
-.conteudo__2__paragrafo{
-    font-size: 1.3rem;
+body {
+    height: 100vh;
+    background-image: url(assets/universo.jpg);
 }
 
-.argumento{
+.conteudo {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
+    gap: 120px;
+   
+}
+.img__homem{
+    width: 400px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    padding: 0 2%;
-    gap: 30px;
-
 }
+
+.conteudo__titulo{
+    font-size: 6rem;
+    color: #ffffff;
+    width: 100%;
+}
+
+.conteudo__paragrafo {
+    font-size: 2.4rem;
+    padding-top: 10%;
+    color: #ffffff;
+}
+.cadastro{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    border: 5px solid;
+    margin-top: 8%;
+    border-radius: 25px;
+    width: 210px;
+    background-color: #FFEAE0;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .conteudo{
+        flex-direction: column;
+    }
+    .navegacao{
+        justify-content: flex-start;
+        margin: 8% 10%;
+
+    }
+}   
